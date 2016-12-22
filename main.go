@@ -17,6 +17,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+
+	"bytes"
 )
 
 var mess = &Messenger{}
