@@ -125,8 +125,9 @@ func MessageReceived(event Event, opts MessageOpts, msg ReceivedMessage) {
 	resp, err := mess.SendSimpleMessage(opts.Sender.ID, fmt.Sprintf(msg.Text))
 	log.Print("profile.FirstName = " + profile.FirstName)
 	log.Print("profile.LastName = " + profile.LastName)
+	log.Print("opts.Sender.ID = " +o pts.Sender.ID)
 	log.Print("msg.Text = " + msg.Text)
-	log.Print("opts.Sender.ID = " +opts.Sender.ID)
+
 	if err != nil {
 		fmt.Println(err)
 	}
