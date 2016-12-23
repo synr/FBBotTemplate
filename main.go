@@ -128,13 +128,13 @@ func MessageReceived(event Event, opts MessageOpts, msg ReceivedMessage) {
 	log.Print("opts.Sender.ID = " + opts.Sender.ID)
 	//https://developers.facebook.com/docs/messenger-platform/webhook-reference/message
 	log.Print("msg.Text = " + msg.Text)
-	log.Print("msg.mid = " + msg.mid)
-	log.Print("msg.seq = " + msg.seq)
-	log.Print("msg.attachment = " + msg.attachment)
-	log.Print("msg.quick_reply = " + msg.quick_reply)
+	// log.Print("msg.mid = " + msg.mid)
+	// log.Print("msg.seq = " + msg.seq)
+	// log.Print("msg.attachment = " + msg.attachment)
+	// log.Print("msg.quick_reply = " + msg.quick_reply)
 
-	log.Print("location.coordinates.lat = " + location.coordinates.lat)
-	log.Print("location.coordinates.long = " + location.coordinates.long)
+	// log.Print("location.coordinates.lat = " + location.coordinates.lat)
+	// log.Print("location.coordinates.long = " + location.coordinates.long)
 
 	if err != nil {
 		fmt.Println(err)
