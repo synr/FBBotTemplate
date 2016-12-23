@@ -79,7 +79,7 @@ func HttpPost_IFTTT(body string) error {
 	url := "https://maker.ifttt.com/trigger/linebot/with/key/WJCRNxQhGJuzPd-sUDext"
 	jsonStr := `{
 		"value1":"` + body + `",
-		"value2":"這是 LINE BOT 的同步通知",
+		"value2":"[這是 FB BOT 的同步通知](https://www.facebook.com/Test-255880601497618/)",
 		"value3": "由 Heroku 的 GO 語言寫成"
 	}`
 
