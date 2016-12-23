@@ -76,7 +76,7 @@ func HttpPost_JANDI(body, connectColor, title string) error {
 func HttpPost_IFTTT(body string) error {
 	//https://internal-api.ifttt.com/maker
 	log.Print("已經進來 IFTTT POST")
-	url := "https://maker.ifttt.com/trigger/linebot/with/key/WJCRNxQhGJuzPd-sUDext"
+	url := "https://maker.ifttt.com/trigger/fbbot/with/key/WJCRNxQhGJuzPd-sUDext"
 	jsonStr := `{
 		"value1":"` + body + `",
 		"value2":"[這是 FB BOT 的同步通知](https://www.facebook.com/Test-255880601497618/)",
